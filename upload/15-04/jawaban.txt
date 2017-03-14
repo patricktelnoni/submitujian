@@ -1,0 +1,38 @@
+1. 	1. OOP itu teknik pemrograman sedangkan MVC itu konsep pemrograman
+
+	2.OOP itu teknik pemrograman yang memandang kode berdasarkan objek, 
+	sedangkan MVC itu konsep pemrograman yang memisahkan antara query ke database (Modeler) 
+	dengan tampilan (Viewer) dan logika pemrograman (Controller).
+
+	3. OOP itu menekankan pengertian “bagaimana sebuah kode program ditulis sebagai 
+	sebuah objek” sedangkan MVC itu menekankan pengertian “bagaimana cara 
+	mengatur arsitektur pembangunan sebuah aplikasi”
+	
+	4. MVC merupakan contoh penerapan teknik OOP.
+
+2.	- $config['base_url'] harus kita isi dengan alamat path dari instalasi codeIgniter kita, 
+	sehingga pada saat aplikasi kita akses, maka kita akan diarahkan ke alamat tersebut.
+	- Jika ingin menggunakan database
+	$autoload['libraries'] = array('database');
+	$db['default']['hostname'] = 'isi dengan host database';
+	$db['default']['username'] = 'username database';
+	$db['default']['password'] = 'password database';
+	$db['default']['database'] = 'nama database';
+
+3. 	Library - Berupa Class yang memiliki kesatuan fungsi penggunaan.
+	secara garis besarnya, satu library bisa terdiri dari beberapa 
+	Class yang dibutuhkan ketika melakukan proses pemanggilan 
+
+	Helper - fungsi yang bisa berdiri sendiri, dan tidak terikat kepada class ataupun library.
+
+4.	-routes.php adalah penghubung antara request  dan action.  
+	Ketika user me-request halaman aplikasi melalui URL, maka FrontController menampung request, 
+	dan memutuskan Controller dan action mana yang akan dipanggil berdasarkan URLpattern.
+
+	- config.php di CI berfungsi sebagai jembatan untuk mengakses URL yang ada disistem kita, 
+	jadi kalau tanpa ada setingan didalam config maka system akan kesulitan ketika mengakses 
+	file yang dimaksud
+
+
+	-autoload.php yang memungkinkan libraries, helpers, 
+	dan models yang akan diinisialisasi secara otomatis setiap kali sistem berjalan. 

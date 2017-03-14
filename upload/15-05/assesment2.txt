@@ -1,0 +1,23 @@
+1.oop adalah teknik pemrograman yang membedakan code bedasarkan objek
+  mvc itu konsep pemrograman php yang memisahkan antara query ke database
+  dengan tampilan dan logika pemrograman
+
+2.config
+  ($config ['base url']) = ' ';
+  ($config [index_page]) = ' ';
+
+  route
+  ($ route['default_controler']="";)
+
+  autoload
+  ($autoload['libraries'] = array ('database'))
+
+3.fungsi remap adalah: 
+
+
+5.autoload: untuk menganalisi automatis liblaries, helpers dan moedl setiap kali sistem berjalan
+  routes: adalah penghubung atara request dan action
+  config: untuk mengatur link url aplikasi, bila mana ini tidak di atur url akan menembak langsung ke protokol 
+
+
+
