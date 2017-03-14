@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Coba buat form sederhana</title>
+     <meta name="description" content="DESCRIPTION">
+    <link rel="stylesheet" href="PATH">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+ <body>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<form action="{{ url_for('hitung') }}" method="post">
+  <table>
+            <tr>
+                <td>Bilangan 1</td>
+                <td>:</td>
+                <td><input type="text" name="angka1"></td>
+            </tr>
+            <tr>
+                <td>Bilangan 2</td>
+                <td>:</td>
+                <td><input type="text" name="angka2"></td>
+            </tr>
+            <tr>
+                <td>Kelas</td>
+                <td>:</td>
+                <td>
+                    <select name="operasi">
+                        <option value="tambah">Tambah</option>
+                        <option value="kurang">Kurang</option>
+                        <option value="kali">Kali</option>
+                        <option value="bagi">Bagi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="hitung"></td>
+            </tr>
+        </table>
+</form>
+ </body>
+
+ </html>

@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Upload Form</title>
+     <meta name="description" content="DESCRIPTION">
+    <link rel="stylesheet" href="PATH">
+      <script src="{{url_for('static', filename='jquery-3.1.1.min.js')}}"></script>
+      <script src="{{url_for('static', filename='dropzone.js')}}"></script>
+<link href="{{url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet">
+      <script src="{{url_for('static', filename='bootstrap.min.js')}}"></script>
+
+      <link href="{{url_for('static', filename='bootstrap-dialog.min.css')}}" rel="stylesheet">
+      <script src="{{url_for('static', filename='bootstrap-dialog.min.js')}}"></script>
+
+      <script src="{{url_for('static', filename='custom.js')}}"></script>
+
+	<link href="{{url_for('static', filename='dropzone.css')}}" rel="stylesheet">
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+ <body>
+
+
+  <form action="/file-upload"
+      class="dropzone"
+      id="dropzone-form">
+      <div class="fallback">
+        <input name="file" type="file" multiple />
+      </div>
+    </form>
+
+ </body>
+
+ </html>
